@@ -827,7 +827,7 @@ input[type="url"]::-webkit-input-placeholder,
 input[type="search"]::-webkit-input-placeholder,
 input[type="tel"]::-webkit-input-placeholder,
 input[type="color"]::-webkit-input-placeholder {
-    color: #c2c2c2;
+    color: #fdfafa;
 }
 
 .form-control::-moz-placeholder, select::-moz-placeholder,
@@ -1031,7 +1031,7 @@ body.md-skin-dark {
 }
 
 .md-skin-dark {
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .md-skin-dark h1, .md-skin-dark h2, .md-skin-dark h3, .md-skin-dark h4,
@@ -1217,7 +1217,7 @@ mark, .mark {
 
 .box-number__description {
     font-weight: 700;
-    color: #c2c2c2;
+    color: #f3f1f1;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1249,7 +1249,7 @@ mark, .mark {
 --------------------------------------------------------------------------------*/
 
 .breadcrumb__item {
-    color: #626262;
+    color: #f7f4f4;
 }
 
 .breadcrumb__item:after {
@@ -1258,7 +1258,7 @@ mark, .mark {
 }
 
 .breadcrumb__item.active {
-    color: #c2c2c2;
+    color: #f7f4f4;
 }
 
 .breadcrumb__item.active:after {
@@ -1298,7 +1298,7 @@ mark, .mark {
     height: 12px;
     margin: 10px;
     border-radius: 50%;
-    background-color: #c2c2c2;
+    background-color: #fcf5f5;
 }
 
 .owl-dot.active {
@@ -1392,7 +1392,7 @@ mark, .mark {
 .fn {
     font-size: 18px;
     font-weight: 700;
-    color: #626262;
+    color: #faf9f9;
     margin-bottom: 15px;
 }
 
@@ -1447,7 +1447,7 @@ mark, .mark {
 
 .comment-metadata > a {
     margin-right: 20px;
-    color: #c2c2c2;
+    color: #faf7f7;
 }
 
 .children {
@@ -1531,7 +1531,7 @@ mark, .mark {
 
 .countdown__module strong {
     display: block;
-    color: #626262;
+    color: #faf7f7;
     font-size: 16px;
     font-weight: 700;
 }
@@ -1547,7 +1547,7 @@ mark, .mark {
 .dropdown__toggle {
     font-size: 14px;
     font-weight: 700;
-    color: #626262;
+    color: #080808;
 }
 
 .dropdown__content {
@@ -3904,11 +3904,11 @@ mark, .mark {
 }
 
 .header__style-02:not(.shrink) .consult-nav .consult-menu .current-menu-item > a {
-    color: #e1edf5;
+    color: #0e0e0e;
 }
 
 .header__style-02:not(.shrink) .dropdown__toggle {
-    color: #c2c2c2;
+    color: #faf6f6;
 }
 
 .header__style-02:not(.shrink) .search-form__toggle {
@@ -4309,7 +4309,7 @@ mark, .mark {
 .page-title {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #a6d0f7;
+    background-color: #b1d2f1;
     text-align: center;
 }
 
@@ -4679,3 +4679,106 @@ mark, .mark {
     bottom: 50px;
     position: absolute;
 }
+
+/*------------------18. blog-area start --------------------*/
+.blog-wrap{
+    background:#fff;
+  }
+  .blog-img{
+    position:relative;
+    z-index:99;
+    overflow:hidden;
+  }
+  .blog-img:before,.blog-img:after{
+    position:absolute;
+    top:0;
+    width:0;
+    height:100%;
+    background:#000;
+    content:"";
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    opacity:.5;
+  }
+  .blog-img:before{
+    left:0;
+  }
+  .blog-wrap:hover .blog-img:before{
+    width:50%;
+  }
+  .blog-img:after{
+    right:0;
+  }
+  .blog-wrap:hover .blog-img:after{
+    width:50%;
+  }
+  .blog-meta{
+    margin-bottom:10px;
+  }
+  .blog-meta ul li{
+    display:inline-block;
+    margin-right:10px;
+  }
+  .blog-meta ul li a{
+    color:#555 !important;
+  }
+  .blog-meta ul li a:hover{
+    color:#296dc1;
+  }
+  .blog-meta ul li a i{
+    margin-right:3px;
+  }
+  .blog-content{
+    position:relative;
+    padding:20px 20px 30px;
+    border-bottom:2px solid #c3c3c3;
+  }
+  .blog-content:before,.blog-content:after{
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    width:10%;
+    height:2px;
+    background: #296dc1;
+    content:"";
+    transition:all .5s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    opacity:.7;
+  }
+  .blog-wrap:hover .blog-content:before,.blog-wrap:hover .blog-content:after{
+    width:50%;
+  }
+  .blog-content:after{
+    left:auto;
+    right:0;
+  }
+  .blog-content h3{
+    margin-bottom:15px;
+  }
+  .blog-content h3 a{
+    font-size:20px;
+    text-transform:capitalize;
+    color:#555!important; 
+  }
+  .blog-content p{
+    margin-bottom:20px;
+    line-height:24px;
+  }
+  .blog-content a.btn-style{
+    border:1px solid #296dc1;
+  }
+  
+  .blog-img img {
+      width: 100%;
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+  ul {
+      list-style: outside none none;
+      margin: 0;
+      padding: 0;
+  }
