@@ -1048,18 +1048,18 @@ a, input, textarea, select {
     outline: none;
 }
 
-h1, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.33333;
-    color: #eae9f0;
+    color: #06021a;
 }
 
-h2, h6 {
+/* h2, h6 {
     font-weight: 700;
     line-height: 1.33333;
     color: #140f2e;
 }
-
+ */
 
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1077,17 +1077,16 @@ h1 {
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 40px;
 }
 
 h3 {
     font-size: 30px;
-    color: white
 }
 
 h4 {
     font-size: 24px;
-    color: white
+
 }
 
 h5 {
@@ -4311,6 +4310,7 @@ mark, .mark {
     padding-bottom: 50px;
     background-color: #b1d2f1;
     text-align: center;
+
 }
 
 @media (min-width: 0) {
@@ -4330,7 +4330,7 @@ mark, .mark {
 @media (min-width: 1200px) {
     .page-title {
         padding-top: 150px;
-        padding-bottom: 150px;
+        padding-bottom: 70px;
     }
 }
 
@@ -4341,7 +4341,7 @@ mark, .mark {
 
 @media (min-width: 0) {
     .page-title__title {
-        font-size: calc(3.16667vw + 30px);
+        /* font-size: calc(3.16667vw + 30px); */
     }
 }
 
